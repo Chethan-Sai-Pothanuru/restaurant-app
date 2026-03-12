@@ -6,7 +6,7 @@
 
 ## ✨ Live Demo
 
-🌐 **[View Live Site](https://yourusername.github.io/restaurant-app)**
+🌐 **[View Live Site](https://Chethan-Sai-Pothanuru.github.io/restaurant-app)**
 > *(Replace `yourusername` with your actual GitHub username after deploying)*
 
 ---
