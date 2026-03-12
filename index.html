@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Maison – Fine Dining</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">La Maison</div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reservations">Reserve</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 1987 · Paris</p>
+      <h1 class="hero-title">Where Every<br/><em>Bite Tells</em><br/>a Story</h1>
+      <p class="hero-sub">Seasonal cuisine crafted with passion, served in an atmosphere of timeless elegance.</p>
+      <div class="hero-cta">
+        <a href="#reservations" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">Explore Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=700&q=80" alt="Chef at work"/>
+      <div class="about-badge">30+ Years of Excellence</div>
+    </div>
+    <div class="about-text">
+      <span class="section-label">Our Story</span>
+      <h2>A Legacy of <em>Flavour & Craft</em></h2>
+      <p>La Maison was born from a singular belief: that a great meal is a form of art. Our head chef, Élise Moreau, trained in Lyon and Tokyo before bringing her vision to life in the heart of the city.</p>
+      <p>Every dish is a meditation on ingredients — sourced from trusted local farms, prepared with classical technique, and plated with modern sensibility.</p>
+      <div class="about-stats">
+        <div><strong>12</strong><span>Awards</span></div>
+        <div><strong>3</strong><span>Michelin Stars</span></div>
+        <div><strong>48</strong><span>Seats</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="section-header">
+      <span class="section-label">Culinary Offerings</span>
+      <h2>Our Menu</h2>
+    </div>
+    <div class="menu-tabs">
+      <button class="tab active" data-tab="starters">Starters</button>
+      <button class="tab" data-tab="mains">Mains</button>
+      <button class="tab" data-tab="desserts">Desserts</button>
+      <button class="tab" data-tab="drinks">Drinks</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <!-- JS fills this -->
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-label">Visual Feast</span>
+      <h2>From Our Kitchen</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item tall"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Dish"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=80" alt="Restaurant"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80" alt="Fine dining"/></div>
+      <div class="gallery-item wide"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=80" alt="Dessert"/></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Food"/></div>
+    </div>
+  </section>
+
+  <!-- RESERVATIONS -->
+  <section class="reservations" id="reservations">
+    <div class="res-left">
+      <span class="section-label light">Book Your Experience</span>
+      <h2>Reserve a<br/><em>Table</em></h2>
+      <p>We seat a limited number of guests each evening to ensure every visit is personal and unhurried.</p>
+      <div class="res-info">
+        <div>
+          <strong>Dinner Service</strong>
+          <span>Tue – Sun · 6:00 PM – 10:00 PM</span>
+        </div>
+        <div>
+          <strong>Lunch Service</strong>
+          <span>Fri – Sun · 12:00 PM – 2:30 PM</span>
+        </div>
+      </div>
+    </div>
+    <div class="res-form">
+      <form id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Jean" required/>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Dupont" required/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" required/>
+          </div>
+          <div class="form-group">
+            <label>Time</label>
+            <select required>
+              <option value="">Select time</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Guests</label>
+            <select required>
+              <option value="">Number of guests</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6+ Guests</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="+1 (555) 000-0000"/>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Special Requests</label>
+          <textarea placeholder="Dietary requirements, celebrations, seating preferences…" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Confirm Reservation</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3>Reservation Confirmed</h3>
+        <p>We look forward to welcoming you. A confirmation has been sent to your email.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <span class="section-label">Find Us</span>
+      <h2>Contact & Location</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h4>Address</h4>
+        <p>18 Rue de la Paix<br/>75002 Paris, France</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h4>Telephone</h4>
+        <p>+33 1 42 60 00 00</p>
+        <p>reservations@lamaison.com</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">🕰</div>
+        <h4>Hours</h4>
+        <p>Tue – Thu: 6PM – 10PM<br/>Fri – Sun: 12PM – 10PM<br/>Mon: Closed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>La Maison</h3>
+        <p>Dining elevated to an art form.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservations">Reserve</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TripAdvisor</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 La Maison · All Rights Reserved · Designed with ♡</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
